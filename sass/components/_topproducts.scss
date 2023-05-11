@@ -1,0 +1,67 @@
+.products {
+    background-color: $color-light-pink;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0;
+    padding: 5rem 10rem;
+    width: 100%;
+
+
+    @media screen and (max-width:768px) {
+        padding: 5rem 6rem;
+    }
+
+    &-heading {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &-p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_item {
+           margin: 2rem 3rem;
+           border-radius: 1.5rem;
+           box-shadow: 5px 5px 10px rgba($color: $color-black, $alpha: 0.20);
+           width: 33%;
+
+           @include respond(phone) {
+            width: 100%;
+        }
+
+            &_img {
+                 border-top-left-radius: 1.5rem;
+                 border-top-right-radius: 1.5rem;
+
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-top-left-radius: 1.5rem;
+                    border-top-right-radius: 1.5rem;
+                }
+            }
+
+            &_text {
+                padding: 2rem;
+                font-size: 1.3rem;
+
+                @include respond(tab-port) {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

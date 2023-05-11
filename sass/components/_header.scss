@@ -1,0 +1,62 @@
+.header {
+height: 98vh;
+
+background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.801),
+      rgba(#080808, 0.801)
+    ),
+    url(../../img/poultry4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &_box {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    text-align: left;
+    transform: translate(-65%, -50%);
+    max-width: 200rem;
+
+    @include respond(tab-port) {
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+
+  }
+
+  &-primary {
+    
+    color: $color-white;
+
+    &--main {
+      font-family: "Paytone One", "sans-serif" ;
+      font-weight: 400;
+      display: block;
+      font-size: 9rem;
+      line-height: 1;
+      margin-bottom: 3rem;
+      animation: moveInLeft 1s ease-out ;
+
+      @include respond(tab-land) {
+        font-size: 7rem;
+      }
+
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
+
+    &--sub {
+      display: block;
+      font-family: "Big Shoulders Text", "serif";
+      font-weight: 700;
+      margin-bottom: 3rem;
+      animation: moveInRight 1s ease-out ;
+    }
+  }
+}

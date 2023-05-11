@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(phone) {
+      font-size: 20%;
+    }
+
+    @include respond(small-desktop) {
+      font-size: 58%;
+    }
+
+    @include respond(tab-land) {
+      font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+      font-size: 50%;
+    }
+}
+
+h2, h3, h4 {
+  font-family: "Big Shoulders Text", "serif";
+}
+
+h2 {
+  font-size: 5rem ;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+h4 { 
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  @include respond(phone) {
+    font-size: 2.1rem;
+  }
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}

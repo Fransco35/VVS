@@ -1,0 +1,56 @@
+.footer {
+    background-color: $color-black;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+    color: $color-white;
+
+    @include respond(tab-port) {
+        padding: 1.5rem 0;
+      }
+
+      &_logobox {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    
+        @include respond(tab-port) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &_logo {
+        width: 10rem;
+        height: auto;
+      }
+
+      &_textcontainer {
+          display: flex;
+          justify-content: space-between;
+
+          padding: 3rem;
+          text-transform: uppercase;
+          font-family: "Big Shoulders Text", "serif";
+          font-size: 1.6rem;
+          line-height: 1.5;
+          border-top: 2px solid $color-light-gray;
+      }
+
+      &_link {
+          margin-left: 0.5rem;
+
+        &:link,
+        &:visited {
+          color: $color-ox-dark;
+          font-size: 2rem;
+          text-decoration: none;
+          display: inline-block;
+          transition: all 0.2s;
+        }
+
+       &:hover,
+       &:active {
+         color: $color-ox-light;
+         box-shadow: 0 1rem 2rem rgba($color-white, 0.4);
+         transform: translateX(1.5rem) rotate(0deg) scale(1.3);
+    }
+      }
+}
