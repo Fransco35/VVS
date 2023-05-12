@@ -519,7 +519,7 @@ p {
 
 .header {
   height: 98vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.801), rgba(8, 8, 8, 0.801)), url(../../img/poultry4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.801), rgba(8, 8, 8, 0.801)), url(../img/poultry4.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
